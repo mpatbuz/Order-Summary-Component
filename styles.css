@@ -1,0 +1,130 @@
+*{
+ box-sizing:border-box;
+}
+:root{
+ --Pale-blue: hsl(225, 100%, 94%);
+ --Bright-blue: hsl(245, 75%, 52%);
+ --Very-pale-blue: hsl(225, 100%, 98%);
+ --Desaturated-blue: hsl(224, 23%, 55%);
+ --Dark-blue: hsl(223, 47%, 23%);
+}
+
+body{
+ font-family: 'Red Hat Display', sans-serif;
+ background:url('images/pattern-background-desktop.svg')hsl(225, 100%, 94%);
+ background-size:contain;
+ background-repeat: no-repeat;
+ margin:0 auto;
+ min-height:100vh;
+ display:flex;
+ justify-content:center;
+ align-items:center;
+
+}
+
+main{
+text-align:center;
+width:400px;
+background-color:var(--Very-pale-blue);
+border-radius:1.4rem;
+}
+
+.hero-img{
+ width:100%;
+ height:auto;
+ object-fit:contain;
+ border-top-left-radius:1.4rem;
+ border-top-right-radius:1.4rem;
+}
+
+.summary-content{
+ padding:1.4rem;
+}
+
+.plan-type{
+ color: var(--Dark-blue);
+ font-weight:900;
+}
+
+span{
+ color:var(--Desaturated-blue);
+}
+
+a{
+ text-decoration:none;
+ color:var(--Desaturated-blue);
+}
+a:hover{
+ color:#746bf1;
+}
+
+.summary-content h1{
+ font-weight:900;
+ color:var(----Dark-blue);
+}
+
+.summary-content h1 p{
+ font-weight:500;
+ font-size: 0.6rem;
+}
+
+.img-plan{
+ display:flex;
+}
+
+.price p{
+ margin-bottom: 4px;
+ margin-top:-3px;
+}
+.wrapper-price-icon{
+ display:flex;
+ gap:20px;
+}
+
+.plan-section{
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+ background-color:rgba(224,232,255,0.4);
+ border-radius:0.625rem;
+ margin:0.2rem 1.4rem;
+ padding:2rem;
+}
+
+.pay-section{
+margin:1.4rem;
+}
+
+.pay-section button{
+ border:none;
+ border-radius:0.625rem;
+ width:350px;
+ padding: 0.93rem 1.8rem;
+ background-color:var(--Bright-blue);
+ color:var(--Very-pale-blue);
+ font-weight:700;
+}
+
+.pay-section{
+ font-weight:700;
+ color:var(--Desaturated-blue);
+ font-size:0.8rem;
+}
+
+.pay-section a{
+ text-decoration:none;
+ display:inline-block;
+ color:var(--Desaturated-blue);
+ margin-top:1.6rem;
+}
+
+.pay-section a:hover{
+ color:hsl(223, 47%, 23%);
+ font-weight:900;
+}
+
+.pay-section button:hover{
+ background-color:#746bf1;
+ box-shadow:2px 16px 9px -2px #d7d2ff;
+ cursor:pointer;
+}
